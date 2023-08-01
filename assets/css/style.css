@@ -6,3 +6,7 @@ body {
 #cities {
     margin: 10px
 }
+
+#extra-buttons {
+    display: none;
+}
