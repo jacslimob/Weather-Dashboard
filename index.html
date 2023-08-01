@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob's Weather Data</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.9/dayjs.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <section class="hero is-link is-small">
+      <div class="hero-body">
+        <p class="title">
+          Weather Dashboard
+        </p>
+      </div>  
+    </section>
+
+    <section class="columns">
+      <div class="section column is-one-quarter">
+        <label class="label">Search for a City:</label>
+        <input type="text" class="block input" placeholder="enter city">
+        <button class = "button block is-info is-fullwidth">Search</button>
+
+      <div class="columns">
+        <div class="column">
+          <button id ="clear" class = "button is-info is-fullwidth">clear</button>
+        </div>
+
+        <!--just added to mess around-->
+        <div class="column">
+        <button id ="display" class = "button is-info is-fullwidth">display</button>
+        </div>
+      </div>
+      </div>
+      
+      <div class="column">
+        <h1 class = "title" id="city"></h1>
+        <div id="temp" class="block"></div>
+        <div id="wind" class="block"></div>
+        <div id="humidity" class="block"></div>
+      </div>
+    </section>
+
+    <section>
+      Recent Searches:
+    </section>
+
+    <section class ='columns' id="cities">
+      <div id="savedOne" class="column"></div>
+      <div id="savedTwo" class="column"></div>
+      <div id="savedThree" class="column"></div>
+      <div id="savedFour" class="column"></div>
+      <div id="savedFive" class="column"></div>
+      
+    </section>
+
+    <section class ="column">
+      <p id="forecast" class="subtitle"></p>
+    </section>
+
+    <section class="columns">
+      
+      <div class="column">
+        <h1 class = "subtitle" id="future-one"></h1>
+        <p id="temp-one" class="block"></p>
+        <p id="wind-one" class="block"></p>
+        <p id="humidity-one" class="block"></p>
+      </div>
+
+      <div class="column">
+        <h1 class = "subtitle" id="future-two"></h1>
+        <p id="temp-two" class="block"></p>
+        <p id="wind-two" class="block"></p>
+        <p id="humidity-two" class="block"></p>
+      </div>
+
+      <div class="column">
+        <h1 class = "subtitle" id="future-three"></h1>
+        <p id="temp-three" class="block"></p>
+        <p id="wind-three" class="block"></p>
+        <p id="humidity-three" class="block"></p>
+      </div>
+
+      <div class="column">
+        <h1 class = "subtitle" id="future-four"></h1>
+        <p id="temp-four" class="block"></p>
+        <p id="wind-four" class="block"></p>
+        <p id="humidity-four" class="block"></p>
+      </div>
+
+      <div class="column">
+        <h1 class = "subtitle" id="future-five"></h1>
+        <p id="temp-five" class="block"></p>
+        <p id="wind-five" class="block"></p>
+        <p id="humidity-five" class="block"></p>
+      </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+
+  </html>
