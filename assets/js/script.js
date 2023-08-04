@@ -13,7 +13,7 @@ var savedFive = document.getElementById('savedFive')
 
 function getApi() {
 
-    var queryURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + savedCities[0] + '&appid=' + APIKey + '&units=imperial';
+    var queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + savedCities[0] + '&appid=' + APIKey + '&units=imperial';
     //first request to get latitude and longitude to put in 5 day forecast call
     fetch(queryURL)
         .then(function (response) {
@@ -34,7 +34,7 @@ function getApi() {
             document.querySelector('#temp').innerHTML = 'Temp: ' + data.main.temp + '°F';
 
             //Added units=imperial to get fahrenheit
-            var fiveDay = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&appid=' + APIKey + '&units=imperial';
+            var fiveDay = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + data.coord.lat + '&lon=' + data.coord.lon + '&appid=' + APIKey + '&units=imperial';
 
             fetch(fiveDay)
                 .then(function (response) {
@@ -208,3 +208,4 @@ clear.addEventListener('click',
     })
 
 
+    
